@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>Index</th>
+        <th>Even/Odd</th>
+        <th>Student Number</th>
+        <th>Student Type</th>
+        <th>Student Major</th>
+        <th>Student Photos</th>
+        <th>Student Orientation Date</th>
+        <th>Student Graduation Date</th>
+    </tr>
+    <tr [ngClass]="e?'even':'odd'" *ngFor="let student of students; let e=even;let o = odd;let i = index">
+        <td>{{i}}</td>
+        <td>{{e? "Even":"Odd"}}</td>
+        <td>{{student.studentNum}}</td>
+        <td>{{student.studentType}}</td>
+        <td>{{student.studentMajor}}</td>
+        <td>{{student.studentPhotos}}</td>
+        <td>{{student.studentOrientationDate | date: 'dd/MM/yyyy' }}</td>
+        <td>{{student.studentGraduateDate | date: 'short' }}</td>
+    </tr>
+</table>

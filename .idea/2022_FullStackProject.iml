@@ -7,6 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/BackEnd/2022_DemoProject/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/BackEnd/2022_DemoProject/src/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/FrontEnd/frontEnd_Angular/frontEnd_Angular/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FrontEnd/frontEnd_Angular/frontEnd_Angular/node_modules" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/FrontEnd/frontEnd_Angular/frontEnd_Angular/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/FrontEnd/frontEnd_Angular/frontEnd_Angular/tmp" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

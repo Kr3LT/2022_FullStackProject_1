@@ -1,12 +1,3 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 <h1>{{title}}</h1>
 
 <div [ngSwitch]="role" >
@@ -16,19 +7,11 @@
     <div *ngSwitchCase="'Admin'">
         <app-students></app-students>
     </div>
-    <div *ngSwitchDefault="">
+    <div *ngSwitchDefault>
         You are not Authorize !
     </div>
 
 </div>
 
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <router-outlet></router-outlet>
