@@ -1,11 +1,12 @@
-<p>students works!</p>
 <h1>Welcome {{studentA.studentName}}</h1>
-<div [hidden]="hideStudent">Student id: <div [innerText]="studentA.studentId"></div></div> 
+<div [hidden]="hideStudent">
+    Student id:
+    <div [innerText]="studentA.studentId"></div>
+</div>
 
-{{studentA.studentGender ??  "no Students"}}
+<!-- {{studentA.studentGender ??  "no Students"}} -->
 
 <div *ngIf="studentA?.studentGender">
-    <!-- {{studentList}} -->
     <table>
         <tr>
             <th>Index</th>
@@ -17,20 +18,17 @@
             <th>Student Orientation Date</th>
             <th>Student Graduation Date</th>
         </tr>
-        <tr *ngFor="let student of studentList; let e=even;let o = odd;let i = index">
+        <tr [ngClass]="e?'even':'odd'" *ngFor="let student of studentList; let e=even;let o = odd;let i = index">
             <td>{{i}}</td>
-            <td> {{e? "Even":"Odd"}}</td>
+            <td>{{e? "Even":"Odd"}}</td>
             <td>{{student.studentNum}}</td>
             <td>{{student.studentType}}</td>
             <td>{{student.studentMajor}}</td>
-            <td>{{student.studentNum}}</td>
-            <td>{{student.studentNum}}</td>
+            <td>{{student.studentPhotos}}</td>
             <td>{{student.studentOrientationDate}}</td>
             <td>{{student.studentGraduateDate}}</td>
         </tr>
     </table>
 </div>
-
-
 
 <button (click)="toggle()">Toggle</button>
